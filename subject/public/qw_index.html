@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/qw_index.css">
+</head>
+<script>
+    // var img1=document.getElementById(img1)
+    function show(){
+        var xhr=new XMLHttpRequest()
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4&&xhr.status==200){ 
+           var r=xhr.responseText;
+           var arr=JSON.parse(r);
+           console.log(arr[0].img);
+        //    img1.src='./image/index/1.jpg'
+        // ./image/index/1.png
+        
+        //    d1.innerHTML=arr[0].img;
+           img1.src=`${arr[0].img}`
+           
+        }
+    }
+    xhr.open('get','/user/v1/carousel/',true)
+    xhr.send()
+    }
+    function login(){
+        window.open('./qw_login.html','_self')
+    }
+</script>
+<body>
+    <!-- 顶部部分 -->
+   <div class="top">
+       <div class="w">
+        <span>好的生活，没那么贵</span>
+        <ul>
+            <li><a href="./qw_login.html">登录</a></li>
+            <li><a href="./qw_reg.html">注册</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">客户服务 ^</a></li>
+            <li><a href="#">微信关注</a></li>
+        </ul>
+       </div>
+   </div>
+   <!-- logo部分 -->
+   <div class="logo">
+       <div class="w search">
+           <img src="./image/logo.gif" alt="">
+           <input type="text" value="输入商品关键词搜索">
+           <a href="#"></a>
+           <a href="#"></a>
+       </div>
+   </div>
+   <!-- nav部分 -->
+   <div class="nav w">
+           <ul>
+               <li><a href="#">首页</a></li>
+               <li><a href="#">数码家电</a></li>
+               <li><a href="#">居家生活</a></li>
+               <li><a href="#">个人护理</a></li>
+               <li><a href="#">时尚轻奢</a></li>
+               <li><a href="#">网红食品</a></li>
+           </ul>
+   </div>
+   <!-- banner部分 -->
+   <div class="banner">
+   </div>
+   <div class="goods w">
+        <h3>每周新品速递</h3>
+        <h5>全球好物 步步领鲜</h5>
+   </div>
+   <!-- box部分 -->
+   <div class="box1 w">
+       <img src="./image/index/1.jpg" alt="">
+       <img src="./image/index/2.jpg" alt="">
+   </div>
+   <div class="box2">
+       <div class="w">
+           <table></table>
+           <ul>
+               <li><h2>人气推荐</h2></li>
+               <li><a href="#">精品推荐</a></li>
+               <li><a href="#">热销排行</a></li>
+           </ul>
+           <img src="./image/index/3.jpg" alt="" class="clearfix">
+           <img src="./image/index/4.jpg" alt="">
+           <img src="./image/index/5.jpg" alt="">
+       </div>
+   </div>
+   <div class="box3 w">
+       <p>
+        <span>精品好物</span>
+        <span>我们在寻找，对生活有态度的你</span>
+       </p>
+        <img src="./image/index/6.png" alt="">
+        <img src="./image/index/7.png" alt="">
+        <img src="./image/index/8.png" alt="">
+   </div>
+   <!-- footer部分 -->
+   <div class="footer1 w">
+    <div class="phone">
+        <p>客服电话</p>
+        <p>028-65292690</p>
+        <p>9:00-18:00</p>
+        <a href="#">用户反馈</a>
+        <a href="#">在线客服</a>
+    </div>
+    <div class="brief_introduction">
+        <p>趣玩简介</p>
+        <p>趣玩网，成立于2008年11月。国内知名创意生活<br>类用品零售平台及专业的新媒体电商运营服务商</p>
+    </div>
+    <div class="code">
+        <p>微信扫一扫关注我们</p>
+        <img src="./image/index/weixin.jpg" alt="">
+        <p>优惠减不停</p>
+    </div>
+   </div>
+   <div class="footer2">
+       <div class="w">
+           <div class="seven">
+               <div></div>
+               <span>7天无忧退货</span>
+               <div></div>
+               <span>全程免运费</span>
+               <div></div>
+               <span>趣玩品质保证</span>
+           </div>  
+           <div class="down">
+                <ul>
+                    <li>免责条款</li>
+                    <li>隐私保护</li>
+                    <li>营业执照</li>
+                    <li>联系我们</li>
+                    <li>公司简介</li>
+                    <li>批发方案</li>
+                    <li>配送方式</li>
+                </ul>
+           </div>
+           <p>&copy;2008-2021 趣玩版权所有，并保留所有权利。高新区孵化园德商国际B座1004 <span>蜀ICP备14003947号-1</span></p>
+       </div>
+   </div>
+   <!-- 侧边栏部分 -->
+   <div class="sidebar">
+       <ul>
+           <li><a href="#"></a></li>
+           <li><a href="#">购物车</a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+           <li><a href="#"></a></li>
+       </ul>
+   </div>
+</body>
+</html>

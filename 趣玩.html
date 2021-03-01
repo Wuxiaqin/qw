@@ -1,0 +1,650 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)https://www.quwan.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Keywords" content="趣玩">
+<meta name="Description" content="趣玩">
+<title>趣玩</title>
+<link rel="shortcut icon" href="https://www.quwan.com/favicon.ico" type="image/x-icon">
+<link href="./趣玩_files/style.css" rel="stylesheet" type="text/css">
+<link href="./趣玩_files/index.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS|趣玩" href="https://www.quwan.com/feed.php">
+<script type="text/javascript" src="./趣玩_files/common.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/index.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/easydialog.min.js.下载"></script></head>
+<body>
+<script type="text/javascript" src="./趣玩_files/jquery-1.9.1.min.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/jquery.json.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/jquery-lazyload.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/transport_jquery.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/utils.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/jquery.SuperSlide.js.下载"></script>
+<script type="text/javascript" src="./趣玩_files/lizi_common.js.下载"></script>
+    <header class="g-hd" id="gTopbar">
+        <div id="j-siteNav" class="m-siteNav">
+            <div class="g-row">
+                <p class="declare">好的生活，没那么贵</p>
+                <div class="top_right">
+		    	<a class="login j-topLogin" href="https://www.quwan.com/user.php" title="登录">登录</a>
+	<a class="register j-topRegister" href="https://www.quwan.com/user.php?act=register">注册</a>
+        
+            
+		                          <div class="split"></div>
+                      <a class="attitude" href="https://www.quwan.com/#">常见问题</a>
+		                          <div class="split"></div>
+                      <a class="attitude" href="https://www.quwan.com/#">联系我们</a>
+		                          <div class="split"></div>
+                      <a class="attitude" href="https://www.quwan.com/#">关于我们</a>
+		                        <div class="split"></div>
+                    <div class="custmService w-dropdown w-dropdown-custm">
+                        <span class="customerText js-custmServiceToggle">客户服务
+                            <i></i>
+                        </span>
+                        <div class="jq-dropdown jq-dropdown-relative jq-dropdown-anchor-right" id="js-customerServiceDropdown1" style="display: none; left: -16px; top: 36px;">
+                            <nav class="jq-dropdown-menu dropdownMenu">
+                                <div class="itemHover">
+                                    <div class="item">
+                                        <span class="itemText">电话客服<span class="triangle"></span></span>
+                                    </div>
+                                    <div class="panel">
+                                        <div class="servicePhoNum">028-65292690</div>
+                                        <div class="serviceTime">9:00-18:00</div>
+				    </div>
+                                </div>
+				<a class="item" href="https://www.quwan.com/user.php?act=order_list">我的订单</a>
+				<a class="item" href="https://www.quwan.com/user.php?act=collection_list">我的收藏</a>
+				<a class="item" href="https://www.quwan.com/user.php?act=address_list">修改收货地址</a>
+                        </nav></div>
+                    </div>
+                    <div class="split"></div>
+                    <div class="m-dropdown m-hdAppDownload">
+                        <a class="trigger j-downloadlink" target="_blank" href="https://www.quwan.com/downloadapp">
+                            <i class="icon w-icon-normal icon-normal-phone-app"></i>
+                            <span class="txt">微信关注</span></a>
+                        <div class="bd">
+                            <div class="wrap">
+                                <div class="QRcode j-qrcode">
+                                    <img src="./趣玩_files/weixin.jpg"></div>
+                                <span class="txt">微信扫一扫关注</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="js-funcTabWrap">
+            <div id="js-funcTab" class="m-funcTab">
+                <div class="g-row">
+                    <a class="tab-logo-activity" href="https://www.quwan.com/" title="趣玩">
+                        <img src="./趣玩_files/logo.gif"></a>
+                    <a class="tab-logo-fixed" href="https://www.quwan.com/" title="趣玩"><img src="./趣玩_files/logo_small.gif"></a>
+                    <div class="tab-inner">
+                        <div class="m-search">
+                            <a class="w-button-cart j-button-cart" href="https://www.quwan.com/flow.php" id="w-button-cart">
+                                <i class="w-icon-normal icon-normal-blackcart"></i>
+                                <i class="w-icon-normal icon-normal-badge j-cart-num" id="ECS_CARTINFO_NUMBER">0</i></a>
+                            <div class="m-searchInput" id="j-search">
+			    <form action="https://www.quwan.com/search.php" method="get" id="searchForm" name="searchForm" onsubmit="return checkSearchForm()">
+                                <div class="w-button-search j-searchButton" onclick="javascript:$(&#39;#searchForm&#39;).submit();">
+                                    <i class="w-icon-normal icon-normal-search"></i>
+                                </div>
+                                <input type="text" name="keywords" id="keyword" value="" maxlength="100" autocomplete="off" class="w-searchInput j-searchInput" placeholder="输入商品关键词搜索">
+			    </form>
+                            </div>
+                        </div>
+                        <ul class="tab-nav">
+                            <li class="nav-item active first">
+                                <a class="topLevel" title="首页" href="https://www.quwan.com/">首页</a></li>
+			    			                                <li class="j-nav-item nav-item">
+                                <a class="topLevel" href="https://www.quwan.com/category.php?id=248" title="数码家电">数码家电</a>
+				                            </li>
+			    			                                <li class="j-nav-item nav-item">
+                                <a class="topLevel" href="https://www.quwan.com/category.php?id=253" title="居家生活">居家生活</a>
+				                            </li>
+			    			                                <li class="j-nav-item nav-item">
+                                <a class="topLevel" href="https://www.quwan.com/category.php?id=259" title="个人护理">个人护理</a>
+				                            </li>
+			    			                                <li class="j-nav-item nav-item">
+                                <a class="topLevel" href="https://www.quwan.com/category.php?id=260" title="时尚轻奢">时尚轻奢</a>
+				                            </li>
+			    			                                <li class="j-nav-item nav-item">
+                                <a class="topLevel" href="https://www.quwan.com/category.php?id=272" title="网红食品">网红食品</a>
+				                                <div class="j-nav-dropdown nav-dropdown">
+                                    <div class="j-nav-cateCard nav-cateCard">
+                                        <ul class="card-list">
+					                                            </ul>
+                                    </div>
+                                </div>
+				                            </li>
+			                            </ul>
+                        <div id="ECS_CARTINFO_TOP"><a class="w-cart j-cart" href="https://www.quwan.com/flow.php" id="top_carts">
+    <i class="w-icon-normal icon-normal-blackcart"></i>
+    <i class="w-icon-normal icon-normal-badge j-cart-num j-cart-num2">0</i>
+</a>
+<div class="j-mini-cart m-mini-cart j-newMiniCart" style="display: none;">
+</div>
+<script type="text/javascript">
+function deleteCartGoods(rec_id)
+{
+	Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse_top, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse_top(res)
+{
+  if (res.error)
+  {
+    alert(res.err_msg);
+  }
+  else
+  {
+      $('.ECS_CARTINFO').html(res.content);
+      $('.cart-panel-content').height($(window).height()-90);
+      $("#ECS_CARTINFO_TOP").html(res.content_top);
+  }
+}
+</script> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+  <script type="text/javascript">
+    
+    <!--
+    function checkSearchForm()
+    {
+        if(document.getElementById('keyword').value)
+        {
+            return true;
+        }
+        else
+        {
+            alert("请输入搜索关键词！");
+            return false;
+        }
+    }
+    -->
+    
+    </script>
+    <div class="g-bd">
+	<div class="m-focus j-focus">
+            <div class="index-slide">
+    <ul class="slidepic">
+        	  <a href="https://www.quwan.com/category.php?id=259&amp;brand=157" target="_blank" style="display: none;"><li style="background:url(data/afficheimg/20201119rvmjut.jpg) no-repeat center center;width:100%;height:420px;text-align:center;"></li></a>
+		  <a href="https://www.quwan.com/goods.php?id=688" target="_blank" style="display: none;"><li style="background:url(data/afficheimg/20201119fuqegs.jpg) no-repeat center center;width:100%;height:420px;text-align:center;"></li></a>
+		  <a href="https://www.quwan.com/goods.php?id=544" target="_blank" style="display: inline;"><li style="background:url(data/afficheimg/20200122dnyozn.jpg) no-repeat center center;width:100%;height:420px;text-align:center;"></li></a>
+	    </ul>
+    <a class="prev" href="javascript:void(0)"></a>
+    <a class="next" href="javascript:void(0)"></a>
+    <div class="num">
+    	<ul><li class="">1</li><li class="">2</li><li class="on">3</li></ul>
+    </div>
+</div>
+<script>
+    $(".index-slide").slide({titCell:".num ul" , mainCell:".slidepic", autoPlay:true, delayTime:700 , autoPage:true});
+</script>	</div>
+        <div class="m-manufacturer">
+            <div class="g-row">
+                <div class="m-cate">
+                    <header class="hd">
+                        <div class="left">
+                            <h3 class="name">每周新品速递</h3>
+                            <small class="frontName">全球好物 步步领鲜</small></div>
+                    </header>
+                    <div class="bd">
+                        <div class="manufacturerList">
+                            
+<a href="https://www.quwan.com/affiche.php?ad_id=6&amp;uri=goods.php%3Fid%3D555" target="_blank"><img data-original="data/afficheimg/1611700284283873655.jpg" src="./趣玩_files/1611700284283873655.jpg" class="loading" width="357" height="320" border="0" style="display: block;"></a><a href="https://www.quwan.com/affiche.php?ad_id=7&amp;uri=goods.php%3Fid%3D537" target="_blank"><img data-original="data/afficheimg/1611700744698553486.jpg" src="./趣玩_files/1611700744698553486.jpg" class="loading" width="357" height="320" border="0" style="display: block;"></a><a href="https://www.quwan.com/affiche.php?ad_id=25&amp;uri=goods.php%3Fid%3D1305" target="_blank"><img data-original="data/afficheimg/1611700317904835695.jpg" src="./趣玩_files/1611700317904835695.jpg" class="loading" width="357" height="320" border="0" style="display: block;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	
+        <div class="m-indexPopularItem j-indexPopularItem">
+            <div class="g-row">
+                <header class="hd">
+                    <div class="left">
+                        <h3 class="name">人气推荐</h3></div>
+                    <div class="tabList">
+                        <ul class="list">
+                            <a class="item on" href="javascript:;"><li class="">精品推荐</li></a>
+                            <a class="item" href="javascript:;"><li class="">热销排行</li></a>
+                        </ul>
+                    </div>
+                </header>
+		<div class="m-indexPopularItem-slide">
+		
+<table cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td style="padding-right: 10px;"><a href="https://www.quwan.com/affiche.php?ad_id=33&amp;uri=goods.php%3Fid%3D1206" target="_blank"><img data-original="data/afficheimg/1611700392041706085.jpg" src="./趣玩_files/1611700392041706085.jpg" class="loading" width="357" height="320" border="0" style="display: inline;"></a></td>
+<td style="padding-right: 10px;"><a href="https://www.quwan.com/affiche.php?ad_id=36&amp;uri=goods.php%3Fid%3D1218" target="_blank"><img data-original="data/afficheimg/1611700410719572849.jpg" src="./趣玩_files/1611700410719572849.jpg" class="loading" width="357" height="320" border="0" style="display: inline;"></a></td>
+<td style="padding-right: 10px;"><a href="https://www.quwan.com/affiche.php?ad_id=34&amp;uri=goods.php%3Fid%3D1203" target="_blank"><img data-original="data/afficheimg/1611700402328597156.jpg" src="./趣玩_files/1611700402328597156.jpg" class="loading" width="357" height="320" border="0" style="display: inline;"></a></td>
+</tr>
+</tbody></table>
+		
+<table cellpadding="0" cellspacing="0" style="display: none;">
+<tbody><tr>
+<td style="padding-right: 10px;"><a href="https://www.quwan.com/affiche.php?ad_id=28&amp;uri=goods.php%3Fid%3D523" target="_blank"><img data-original="data/afficheimg/1611700361652634020.jpg" src="./趣玩_files/1611700361652634020.jpg" class="loading" width="357" height="320" border="0" style="display: inline;"></a></td>
+<td style="padding-right: 10px;"><a href="https://www.quwan.com/affiche.php?ad_id=29&amp;uri=goods.php%3Fid%3D562" target="_blank"><img data-original="data/afficheimg/1611700374915242606.jpg" src="./趣玩_files/1611700374915242606.jpg" class="loading" width="357" height="320" border="0" style="display: inline;"></a></td>
+<td style="padding-right: 10px;"><a href="https://www.quwan.com/affiche.php?ad_id=30&amp;uri=goods.php%3Fid%3D1288" target="_blank"><img data-original="data/afficheimg/1611700384613825337.jpg" src="./趣玩_files/1611700384613825337.jpg" class="loading" width="357" height="320" border="0" style="display: inline;"></a></td>
+</tr>
+</tbody></table>
+                </div>
+            </div>
+        </div>
+	<script>
+	$(".m-indexPopularItem").slide({titCell:".tabList ul a",mainCell:".m-indexPopularItem-slide",trigger:"mouseover",pnLoop:false});
+	</script>
+	
+        <div class="m-newCates j-newCates">
+	
+        </div>
+        <div class="m-expert">
+            <div class="g-row">
+                <div class="m-cate">
+                    <header class="hd">
+                        <div class="left">
+                            <h3 class="name">精选好物</h3>
+                            <small class="frontName">我们在寻找，对生活有态度的你</small></div>
+                    </header>
+                    <div class="bd">
+                        <div class="expertContent">
+                            
+<a href="https://www.quwan.com/affiche.php?ad_id=16&amp;uri=category.php%3Fid%3D260" target="_blank"><img data-original="data/afficheimg/1579573325460051374.png" src="./趣玩_files/1579573325460051374.png" class="loading" width="690" height="380" border="0" style="display: inline;"></a>
+<a href="https://www.quwan.com/affiche.php?ad_id=18&amp;uri=category.php%3Fid%3D248" target="_blank"><img data-original="data/afficheimg/1579573408795255586.png" src="./趣玩_files/1579573408795255586.png" class="loading" width="390" height="185" border="0" style="display: inline;"></a><a href="https://www.quwan.com/affiche.php?ad_id=17&amp;uri=category.php%3Fid%3D253" target="_blank"><img data-original="data/afficheimg/1579573452345682001.png" src="./趣玩_files/1579573452345682001.png" class="loading" width="390" height="185" border="0" style="display: inline;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <!--        <div class="m-newComment">
+	    <div class="g-row">
+                <div class="m-cate">
+                    <header class="hd">
+                        <div class="left">
+                            <h3 class="name">猜你喜欢</h3>
+                            <small class="frontName">来这里把心头所好加入购物车</small></div>
+                    </header>
+                    <div class="bd">
+			<ul class="itemList">
+			  <div id="js-CommentSlick" class="js-CommentSlick m-newItemSlick slick-initialized slick-slider">
+			    <button type="button" class="slick-prev icon-normal-slick-leftRound w-icon-normal slick-arrow" style="display: block;"></button>
+			    <div aria-live="polite" class="slick-list draggable">
+			      <div class="slick-track">
+								<li class="item slick-slide slick-cloned" style="width: 357px;">
+				  <div class="m-product">
+				    <div class="hd">
+				      <a href="goods.php?id=563" title="KableCARD都市生存卡" target="_blank" tabindex="-1">
+					<img data-original="https://www.quwan.com/images/202002/thumb_img/563_thumb_G_1581642800772.jpg" src="themes/mb5_com_cn/images/spacer.gif" alt="KableCARD都市生存卡" class="loading img img-lazyloaded" style="opacity: 1;"></a>
+				    </div>
+				    <div class="bd bd_comment">
+				      <div class="m-comment">
+					<div class="bd _top">
+					  <span class="frontname">qu***0</span>
+					  <span class="date">2020-09-18</span></div>
+					<div class="bd _middle">
+					  <span class="pname" title="KableCARD都市生存卡">KableCARD都市生存卡</span>
+					  <span class="price">￥238.00</span></div>
+					<div class="comment-content">
+					  <p>非常实用，很好</p>
+					  <s class="more" style="display: none;"></s>
+					</div>
+				      </div>
+				    </div>
+				  </div>
+				</li>
+							      </div>
+			    </div>
+			    <button type="button" class="slick-next icon-normal-slick-rightRound w-icon-normal slick-arrow" style="display: block;"></button>
+			  </div>
+			</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <script>
+	  $(".m-newComment").slide({mainCell:".slick-track",effect:"left",autoPlay:true,autoPage:true,prevCell:".slick-prev",nextCell:".slick-next",scroll:1,vis:3});
+      </script>-->                
+    </div>
+    <footer class="g-ft">
+        <div class="m-ft1">
+            <div class="g-row">
+                <div class="item">
+                    <div class="m-serviceTel">
+                        <h4 class="hd">客服电话</h4>
+                        <p class="phone">028-65292690</p>
+                        <p class="datetime">9:00-18:00</p>
+                        <a id="j-feedback" class="w-button btnyou feedbackBtn" href="javascript:;">用户反馈</a>
+                        <a id="j-kefu" class="w-button btnyou kefuBtn" href="javascript:;">在线客服</a></div>
+                </div>
+                <div class="item">
+                    <div class="m-whatIsYX">
+                        <h4 class="hd">趣玩简介</h4>
+                        <p class="desc">趣玩网，成立于2008年11月。国内知名创意生活类用品零售平台及专业的新媒体电商运营服务商。</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="m-ftAppDownload">
+                        <h4 class="hd">微信扫一扫关注我们</h4>
+                        <img class="img" src="./趣玩_files/weixin.jpg" width="104" height="104">
+                        <div class="m-qrcode j-qrcode"></div>
+                        <div class="tip">优惠减不停</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="m-ft2">
+            <div class="g-row">
+                <ul class="m-siteEnsure">
+                    <li class="item">
+                        <div class="inner">
+                            <i class="icon w-icon-normal icon-normal-ft1"></i>
+                            <p class="text">7天无忧退货</p></div>
+                    </li>
+                    <li class="item">
+                        <div class="inner">
+                            <i class="icon w-icon-normal icon-normal-ft2"></i>
+                            <p class="text">全场免邮费</p></div>
+                    </li>
+                    <li class="item">
+                        <div class="inner">
+                            <i class="icon w-icon-normal icon-normal-ft3"></i>
+                            <p class="text">趣玩品质保证</p></div>
+                    </li>
+                </ul>
+                <hr>
+                <div class="m-siteInfo">
+		                        <nav class="nav">
+		    			                        <a class="text" href="https://www.quwan.com/article.php?id=1">免责条款</a>
+		    			<b class="split">|</b>                        <a class="text" href="https://www.quwan.com/article.php?id=2">隐私保护</a>
+		    			<b class="split">|</b>                        <a class="text" href="https://www.quwan.com/article.php?id=3" target="_blank">营业执照</a>
+		    			<b class="split">|</b>                        <a class="text" href="https://www.quwan.com/article.php?id=4">联系我们</a>
+		    			<b class="split">|</b>                        <a class="text" href="https://www.quwan.com/article.php?id=5">公司简介</a>
+		    			<b class="split">|</b>                        <a class="text" href="https://www.quwan.com/wholesale.php">批发方案</a>
+		    			<b class="split">|</b>                        <a class="text" href="https://www.quwan.com/myship.php">配送方式</a>
+		                        </nav>
+		                        <p class="copyright">
+		    © 2008-2021 趣玩 版权所有，并保留所有权利。 高新区孵化园德商国际B座1004 		      		      <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备14003947号-1</a>
+		      		      		    </p>
+		                    </div>
+            </div>
+        </div>
+    </footer>
+<div style="display:none;">共执行 10 个查询，用时 0.013208 秒，在线 204 人，Gzip 已禁用，占用内存 3.550 MB<img src="./趣玩_files/cron.php" alt="" style="width:0px;height:0px;"></div>
+<link href="./趣玩_files/right_bar.css" rel="stylesheet" type="text/css">
+<div class="right-sidebar-con">
+	<div class="right-sidebar-main">
+        <div class="right-sidebar-panel">
+            <div id="quick-links" class="quick-links">
+            	<ul>
+                    <li class="quick-area quick-login">
+                        <a href="javascript:;" class="quick-links-a"><i class="setting"></i></a>
+                        <div class="sidebar-user quick-sidebar">
+                        	<i class="arrow-right"></i>
+                            <div class="sidebar-user-info">
+                            	                                <div class="user-pic">
+                                	<div class="user-pic-mask"></div>
+                                    <img src="./趣玩_files/people.gif">
+                                </div>
+                                <p>你好！请<a href="https://www.quwan.com/user.php" class="quick-login-a main-color">登录</a>|<a href="https://www.quwan.com/user.php?act=register" class="main-color">注册</a></p>
+                                                            </div>
+                        </div>
+                    </li>
+                    <li class="sidebar-tabs">
+                        <div class="cart-list quick-links-a" id="collectBox">
+                            <i class="cart"></i>
+                            <div class="span">购物车</div>
+                            <span class="ECS_CARTINFO" id="ECS_CARTINFO"><form id="formCart" name="formCart" method="post" action="https://www.quwan.com/flow.php">
+	<span class="cart_num">0</span>
+	<div class="sidebar-cart-box">
+        <h3 class="sidebar-panel-header">
+            <a href="javascript:;" class="title"><i class="cart-icon"></i><em class="title">购物车</em></a>
+            <span class="close-panel"></span>
+        </h3>
+        <div class="cart-panel-main">
+            <div class="cart-panel-content" style="height: 884px;">
+                                <div class="tip-box">
+                  <i class="tip-icon"></i>
+                  <div class="tip-text">您的购物车里什么都没有哦<br><a class="main-color" href="https://www.quwan.com/">再去看看吧</a></div>
+                </div>
+                            </div>
+        </div>
+            </div>
+<script type="text/javascript">
+function deleteCartGoods(rec_id){
+	Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res){
+  if (res.error){
+    alert(res.err_msg);
+  }else{
+      $('.ECS_CARTINFO').html(res.content);
+      $('.cart-panel-content').height($(window).height()-90);
+      $("#ECS_CARTINFO_TOP").html(res.content_top);
+  }
+}
+</script> 
+</form>
+</span>
+                        </div>
+                    </li>
+                    <li class="sidebar-tabs">
+                        <a href="javascript:void(0);" class="mpbtn_history quick-links-a"><i class="history"></i></a>
+                        <div class="popup">
+                            <font id="mpbtn_histroy">浏览历史</font>
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                    <li id="collectGoods">
+                        <a href="https://www.quwan.com/user.php?act=collection_list" target="_blank" class="mpbtn_collect quick-links-a"><i class="collect"></i></a>
+                        <div class="popup">
+                            我的收藏
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                    <li id="collectGoods">
+                        <a href="https://www.quwan.com/user.php?act=account_log" target="_blank" class="mpbtn_collect quick-links-a"><i class="account"></i></a>
+                        <div class="popup">
+                            我的资产
+                            <i class="arrow-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="quick-toggle">
+            	<ul>
+                    <li class="quick-area">
+                    	<a class="quick-links-a" href="javascript:;"><i class="customer-service"></i></a>
+                        <div class="sidebar-service quick-sidebar">
+                        	<i class="arrow-right"></i>
+												<div class="customer-service">
+				    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=75283535&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-qq"></span>联系QQ客服</a>
+				</div>
+																<div class="customer-service">
+				    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=75283535&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-qq"></span>联系QQ客服</a>
+				</div>
+																<div class="customer-service">
+				    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=75283535&amp;site=qq&amp;menu=yes" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-qq"></span>联系QQ客服</a>
+				</div>
+																				<div class="customer-service">
+				    <a target="_blank" href="http://amos1.taobao.com/msg.ww?v=2&amp;uid=xkfla&amp;s=2" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-ww"></span>联系旺旺客服</a>
+				</div>
+																<div class="customer-service">
+				    <a target="_blank" href="http://amos1.taobao.com/msg.ww?v=2&amp;uid=xkflaa&amp;s=2" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-ww"></span>联系旺旺客服</a>
+				</div>
+																<div class="customer-service">
+				    <a target="_blank" href="http://amos1.taobao.com/msg.ww?v=2&amp;uid=xkfla&amp;s=2" alt="点击这里给我发消息" title="点击这里给我发消息"><span class="icon-ww"></span>联系旺旺客服</a>
+				</div>
+								                        </div>
+                    </li>
+                    <li class="quick-area">
+                    	<a class="quick-links-a" href="javascript:;"><i class="qr-code"></i></a>
+                        <div class="sidebar-code quick-sidebar">
+                        	<i class="arrow-right"></i>
+                            <img src="./趣玩_files/weixin.jpg">
+                        </div>
+                    </li>
+                    <li class="returnTop" style="display: none;">
+                        <a href="javascript:;" class="return_top quick-links-a"><i class="top"></i></a>
+                        <div class="popup">
+                        	返回顶部
+                        	<i class="arrow-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="">
+        	
+            
+        	
+        	<div id="ECS_CARTINFO_content" class="ECS_CARTINFO right-sidebar-panels"><form id="formCart" name="formCart" method="post" action="https://www.quwan.com/flow.php">
+	<span class="cart_num">0</span>
+	<div class="sidebar-cart-box">
+        <h3 class="sidebar-panel-header">
+            <a href="javascript:;" class="title"><i class="cart-icon"></i><em class="title">购物车</em></a>
+            <span class="close-panel"></span>
+        </h3>
+        <div class="cart-panel-main">
+            <div class="cart-panel-content" style="height: 884px;">
+                                <div class="tip-box">
+                  <i class="tip-icon"></i>
+                  <div class="tip-text">您的购物车里什么都没有哦<br><a class="main-color" href="https://www.quwan.com/">再去看看吧</a></div>
+                </div>
+                            </div>
+        </div>
+            </div>
+<script type="text/javascript">
+function deleteCartGoods(rec_id){
+	Ajax.call('delete_cart_goods.php', 'id='+rec_id, deleteCartGoodsResponse, 'POST', 'JSON');
+}
+
+/**
+ * 接收返回的信息
+ */
+function deleteCartGoodsResponse(res){
+  if (res.error){
+    alert(res.err_msg);
+  }else{
+      $('.ECS_CARTINFO').html(res.content);
+      $('.cart-panel-content').height($(window).height()-90);
+      $("#ECS_CARTINFO_TOP").html(res.content_top);
+  }
+}
+</script> 
+</form>
+</div>
+        	
+            
+        	<div class="right-sidebar-panels">
+				<h3 class="sidebar-panel-header">
+                	<a href="javascript:;" class="title"><i></i><em class="title">我的足迹</em></a>
+                    <span class="close-panel"></span>
+                </h3>
+          		<div class="sidebar-panel-main">
+            		<div class="sidebar-panel-content">
+              			<div class="history-panel">
+              				<ul>
+                				<li>
+              <div class="p-img"><a target="_blank" href="https://www.quwan.com/goods.php?id=555"><img data-original="https://www.quwan.com/images/202002/thumb_img/555_thumb_G_1582159605539.jpg" src="./趣玩_files/spacer.gif" class="loading" alt="麦子厨房小红锅多功能华夫饼机"></a></div>
+              <div class="p-name"><a target="_blank" href="https://www.quwan.com/goods.php?id=555">麦子厨房小红锅多功能华夫饼机</a> </div>
+              <div class="p-comm"><span class="p-price main-color">￥668.00</span> </div>
+            </li><li>
+              <div class="p-img"><a target="_blank" href="https://www.quwan.com/goods.php?id=563"><img data-original="https://www.quwan.com/images/202002/thumb_img/563_thumb_G_1581642800772.jpg" src="./趣玩_files/spacer.gif" class="loading" alt="KableCARD都市生存卡"></a></div>
+              <div class="p-name"><a target="_blank" href="https://www.quwan.com/goods.php?id=563">KableCARD都市生存卡</a> </div>
+              <div class="p-comm"><span class="p-price main-color">￥238.00</span> </div>
+            </li><li>
+              <div class="p-img"><a target="_blank" href="https://www.quwan.com/goods.php?id=570"><img data-original="https://www.quwan.com/images/202001/thumb_img/570_thumb_G_1579639918238.jpg" src="./趣玩_files/spacer.gif" class="loading" alt="韩国Didinika直径24CM汤锅"></a></div>
+              <div class="p-name"><a target="_blank" href="https://www.quwan.com/goods.php?id=570">韩国Didinika直径24CM汤锅</a> </div>
+              <div class="p-comm"><span class="p-price main-color">￥199.00</span> </div>
+            </li>                			</ul>
+     		  			</div>
+            		</div>
+          		</div>
+        	</div>
+        	
+        </div>
+    </div>
+</div>
+<script type="text/javascript">	
+$(window).scroll(function(){ 
+	if($(this).scrollTop() > $(window).height() ){ 
+		$('.returnTop').show();
+	}else{ 
+		$('.returnTop').hide();
+	} 
+}) 
+$('.cart-panel-content').height($(window).height()-90);
+$('.bonus-panel-content').height($(window).height()-40);
+$(".returnTop").click(function(){
+	$('body,html').animate({scrollTop:0},800);
+	return false;
+});
+$('.quick-area').hover(function(){
+	$(this).find('.quick-sidebar').toggle();
+})
+//移动图标出现文字
+$(".right-sidebar-panel li").mouseenter(function(){
+	$(this).children(".popup").stop().animate({left:-92,queue:true});
+	$(this).children(".popup").css("visibility","visible");
+	$(this).children(".ibar_login_box").css("display","block");
+});
+$(".right-sidebar-panel li").mouseleave(function(){
+	$(this).children(".popup").css("visibility","hidden");
+	$(this).children(".popup").stop().animate({left:-121,queue:true});
+	$(this).children(".ibar_login_box").css("display","none");
+});
+//点击购物车、用户信息以及浏览历史事件
+$('.sidebar-tabs').click(function(){
+	if($('.right-sidebar-main').hasClass('right-sidebar-main-open')&&$(this).hasClass('current')){
+		$('.right-sidebar-main').removeClass('right-sidebar-main-open');
+		$(this).removeClass('current');
+		$('.right-sidebar-panels').eq($(this).index()-1).removeClass('animate-in').addClass('animate-out').css('z-index',1);
+	}else{
+		$(this).addClass('current').siblings('.sidebar-tabs').removeClass('current');
+		$('.right-sidebar-main').addClass('right-sidebar-main-open');
+		$('.right-sidebar-panels').eq($(this).index()-1).addClass('animate-in').removeClass('animate-out').css('z-index',2).siblings('.right-sidebar-panels').removeClass('animate-in').addClass('animate-out').css('z-index',1);
+	}
+});
+$(".right-sidebar-panels").on('click', '.close-panel', function () {
+	$('.sidebar-tabs').removeClass('current');
+	$('.right-sidebar-main').removeClass('right-sidebar-main-open');
+	$('.right-sidebar-panels').removeClass('animate-out');
+});
+$(document).click(function(e){ 
+	var target = $(e.target); 
+	if(target.closest('.right-sidebar-con').length == 0){ 
+		$('.right-sidebar-main').removeClass('right-sidebar-main-open');
+		$('.sidebar-tabs').removeClass('current');
+		$('.right-sidebar-panels').removeClass('animate-in').addClass('animate-out').css('z-index',1);
+	} 
+}) 
+$('.pop-login').css('top',($(window).height()-$('.pop-login').height())/2);
+$('.pop-close').click(function(){
+	$('.pop-main,.pop-mask').hide();
+	$('form[name="formLogin"]').find('.msg-wrap').css('visibility','hidden');
+	$('.pop-login .item,.pop-login .item-detail').removeClass('item-error');
+	$('.pop-login .text').val('');
+})
+$('.pop-login .item .text').focus(function(){
+	$(this).addClass('')	
+})
+</script><script type="text/javascript">
+$("img").lazyload({
+	effect: "fadeIn",
+	threshold: 100,
+	failure_limit: 25,
+	skip_invisible: false
+});
+</script>
+
+</body></html>

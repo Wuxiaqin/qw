@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/qw_login.css">
+</head>
+<script>
+    function uname_show(){
+        uname_msg.innerHTML='';
+        uname.style.border=`1px solid rgb(180,160,120)`;
+    }
+    function upwd_show(){
+        upwd_msg.innerHTML-'';
+        uname.style.border=`1px solid rgb(180,160,120)`;
+    }
+    function uname_leave() { 
+    if (!uname.value) {
+        uname_msg.innerHTML = '用户名不能为空'
+        uname.style.border=`1px solid red`;
+    } else { 
+        uname_msg.innerHTML=''
+        uname.style.border=`1px solid rgb(180,160,120)`;
+    }
+    
+}
+function upwd_leave() { 
+    if (!upwd.value) {
+        upwd_msg.innerHTML = '密码不能为空'
+        upwd.style.border=`1px solid red`;
+    } else { 
+        upwd_msg.innerHTML =''
+        upwd.style.border=`1px solid rgb(180,160,120)`;
+    }
+}
+    function reg(){
+        window.open('qw_reg.html','_self')
+    }
+    function login(){
+        // console.log('11111')
+        // console.log(uname.value,upwd.value)
+        var _uname=uname.value;
+        var _upwd=upwd.value
+        if(!uname.value && !upwd.value){
+            alert('登录失败，请输入你的用户名和密码')
+            return;
+        }
+        var xhr=new XMLHttpRequest()
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                // console.log('2222')
+                if(xhr.responseText==1){
+                    alert('登录成功')
+                    window.open('qw_index.html','_self')
+                }
+            }
+        }
+        xhr.open("get",`/user/v1/login/${_uname}&${_upwd}`,true)
+        xhr.send();
+    };
+</script>
+<body>
+    <div class="logo">
+        <div class="w">
+            <img src="./image/logo.gif" alt="">
+            <span>如未注册，点此<button onclick="reg()">注册</button></span>
+        </div>
+    </div>
+    <div class="bd">
+        <div class="putin w">
+            <p>
+                <a href="">会员登录</a>
+                <a href="">手机动态密码登录</a>
+            </p>
+            <input type= "text" id="uname" placeholder="用户名、手机、邮箱" onfocus="uname_show()" onblur="uname_leave()">
+            <p id="uname_msg"></p>
+            <input type="password" id="upwd" placeholder="密码" onfocus="upwd_show()" onblur="upwd_leave()">
+            <p id="upwd_msg"></p>
+            <p id="saveinfor"><input name="check" type="checkbox"checked="checked"><span> 请保存我这次的登录信息 </span><a href="./qw_forget.html">忘记密码？</a></p>
+            <button onclick="login()" class="login">登录</button>
+        </div>
+    </div>
+<div id="d1"></div>
+</body>
+</html>

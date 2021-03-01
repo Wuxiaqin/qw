@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/qw_forget.css">
+</head>
+<script>
+    function submit(){
+        // console.log("1111")
+        if(!uname.value||!email.value){
+            alert('请输入你的用户名！！！请输入你的邮件地址！！！')
+            return;
+        }
+        var _uname=uname.value;
+        var _email=email.value;
+        var xhr=new XMLHttpRequest()
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4&&xhr.status==200){
+                d1.innerHTML=xhr.responseText;
+            }
+        }
+        xhr.open("get",`/user/v1/forget/${_uname}&${_email}`,true)
+        xhr.send();
+    }
+    function login(){
+        window.open('./qw_login.html','_self')
+    }
+    function returnup(){
+        window.open('./qw_login.html','_self')
+    }
+</script>
+<body>
+    <div class="logo">
+        <div class="w">
+            <img src="./image/logo.gif" alt="">
+            <span>如已注册，点此 <button  onclick="login()">登录</button></span>
+        </div>
+    </div>
+    <div class="bd">
+        <div class="putin w">
+            <p>通过邮件找回密码</p>
+            <input type="text" id='uname' placeholder="请输入您注册的用户名和注册时填写的电子邮件信息">
+            <input type="text" id='email'  placeholder="电子邮件地址">
+            <button onclick="submit()">提交</button>
+            <button onclick="returnup()">返回上一页</button>
+        </div>
+    </div>
+    <div id='d1'></div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w{
+    width: 982px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: 0;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: 0;
+}
+button:focus{
+    outline: none;
+}
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+.logo{
+    height: 100px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    box-shadow: 5px 10px 10px -10px rgba(0, 0, 0, 0.7);
+}
+.logo img{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.logo span{
+    float: right;
+    margin-top: 55px;
+    margin-right: 30px;
+}
+.logo span button{
+    width: 50px;
+    height: 20px;
+    color: #fff;
+    border: 1px solid rgb(180, 160, 120);
+    border-radius: 2px;
+    background-color:rgb(180, 160, 120);
+    margin-left: 10px;
+}
+.bd{
+    height: 560px;
+    /* line-height: 560px; */
+    padding-top: 50px;
+    background-color: rgb(204, 204, 204);
+}
+.bd .putin{
+    width: 980px;
+    height: 460px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 9px 11px 21px 2px rgba(0, 0, 0, 0.5);
+}
+.bd .putin a:nth-child(1),.bd .putin a:nth-child(2){
+    float: left;
+    width: 490px;
+    height: 50px;
+    border-left: 1px solid #ccc;
+    background-image: url(../image/login/用户.png);
+    background-repeat: no-repeat;
+    background-size: 7%;
+    background-position-x: 175px;
+    background-position-y: 10px;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color:rgba(0, 0, 0, 0.5);
+}
+.bd .putin a:nth-child(1):hover,.bd .putin a:nth-child(2):hover{
+    color:rgb(180, 160, 120) ;
+    border-bottom: 1px solid rgb(180, 160, 120);
+}
+.bd .putin a:nth-child(2){
+    background-image: url(../image/login/手机.png);
+    background-position-x:145px ;
+    background-position-y:10px ;
+}
+.bd .putin input:nth-child(2),.bd .putin input:nth-child(4){
+    width: 396px;
+    height: 40px;
+    border: 1px solid rgb(180, 160, 120);
+    border-radius: 10px;
+    margin-top:38px;
+    text-indent: 1em;
+    font-size: 14px;
+}
+.bd .putin p:nth-child(3),.bd .putin p:nth-child(5){
+    height: 10px;
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+    margin-left: -300px;
+}
+#saveinfor{
+    height: 15px;
+}
+#saveinfor input{
+    float: left;
+    margin-left: 290px;
+}
+#upwd_msg{
+    margin-bottom: 15px;
+}
+#saveinfor span{
+    float: left;
+    font-size: 12px;
+}
+#saveinfor a{
+    display:block;
+    float: right;
+    margin-right: 280px;
+    color: rgb(180, 160, 120);
+}
+.login{
+    display: block;
+    margin: 20px auto;
+    width: 396px;
+    height: 50px;
+    background-color: rgb(180, 160, 120);
+    border-radius: 10px;
+    color: #fff;
+    /* margin-top: 20px;
+    margin-left: 180px; */
+}

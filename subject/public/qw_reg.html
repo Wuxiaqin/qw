@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/qw_reg.css">
+</head>
+<script>
+    function in_uname(){
+        uname_msg.innerHTML=""
+    }
+    function out_uname(){
+        if(uname.value.length<3){
+            uname_msg.innerHTML="用户长度不能少于3个字符"
+        }else{
+            // console.log("111111")
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4&&xhr.status==200){
+                    if(xhr.responseText==1){
+                        // console.log('22222')
+                        uname_msg.innerHTML='用户名已存在，请重新输入'
+                    }else {
+                        console.log('3333')
+                        uname_msg.innerHTML=''
+                    }
+                }
+            }
+            xhr.open('get',`/user/v1/reg_uname/${uname.value}`);
+            xhr.send();
+        }
+    }
+    function in_email(){
+        email_msg.innerHTML='';
+    }
+    function out_email(){
+        if(!email.value){
+            email_msg.innerHTML='邮件地址不能为空'
+        }else{
+            email_msg.innerHTML=''
+        }
+    }
+    function in_upwd(){
+        upwd_msg.innerHTML=''
+    }
+    function out_upwd(){
+        if(upwd.value.length<6){
+            upwd_msg.innerHTML='登录密码不能少于6个字符'
+        }else{
+            upwd_msg.innerHTML=''
+        }
+    }
+    function in_spwd(){
+        spwd_msg.innerHTML='';
+    }
+    function out_spwd(){
+        if(spwd.value.length<6){
+            spwd_msg.innerHTML='登录密码不能少于6个字符'
+        }else{
+            spwd_msg.innerHTML=''
+        }
+    }
+    function login(){
+        window.open('qw_login.html','_self')
+    }
+    function reg(){
+        if (uname_msg.innerHTML && upwd_msg.innerHTML && spwd_msg.innerHTML && email_msg.innerHTML ) {
+        alert('注册失败,请检查你的注册信息')
+        return;
+    }
+        if(!uname.value && !upwd.vaue && !email.value && !upwd.value){
+            alert('注册失败，请检查你的注册信息')
+            return;
+        }
+        var xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = function () { 
+        if (xhr.readyState == 4 && xhr.status == 200) { 
+            if (xhr.responseText == 1) {
+                alert('注册成功')
+                window.open('qw_login.html','_self')
+            } else { 
+                alert('注册失败')
+            }
+        }
+    }
+        xhr.open('post','/user/v1/reg',true)
+        xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        var formdata = `uname=${uname.value}&upwd=${upwd.value}&email=${email.value}`;
+         xhr.send(formdata)
+}
+</script>
+<body>
+    <div class="logo">
+        <div class="w">
+            <img src="./image/logo.gif" alt="">
+            <p><span>如已注册，点此</span><button onclick="login()">登录</button></p> 
+        </div>
+    </div>
+    <div class="box">
+        <div class="putin w">
+            <p>新用户注册</p>
+            <input type="text" id="uname" onfocus="in_uname()" onblur="out_uname()" placeholder="用户名">
+            <p id="uname_msg"></p>
+            <input type="email" id="email" onfocus="in_email()" onblur="out_email()" placeholder="邮箱">
+            <p id="email_msg"></p>
+            <input type="password" id="upwd" onfocus="in_upwd()" onblur="out_upwd()" placeholder="密码">
+            <p id="upwd_msg"></p>
+            <input type="password" id="spwd" onfocus="in_spwd()" onblur="out_spwd()" placeholder="确认密码 ">
+            <p id="spwd_msg"></p>
+            <p><input type="checkbox">我已看过并看过<a href="#">《用户协议》</a></p>
+            <button onclick="reg()">同意协议并注册</button> 
+        </div>
+    </div>
+</body>
+</html>

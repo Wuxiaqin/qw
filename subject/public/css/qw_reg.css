@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w{
+    width: 982px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: 0;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: 0;
+}
+button:focus{
+    outline: none;
+}
+.clearfix:before,.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}
+.logo{
+    height: 100px;
+    background-color:#fff;
+    box-shadow: 5px 10px 10px -10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 5px;
+}
+.logo img{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.logo p{
+    float: left;
+    margin-top: -25px;
+    margin-left: 800px
+}
+.logo span{
+    font-size: 14px;
+}
+.logo p button{
+    width: 50px;
+    height: 20px;
+    color: #fff;
+    border: 1px solid rgb(180, 160, 120);
+    border-radius: 2px;
+    background-color:rgb(180, 160, 120);
+    margin-left: 10px;
+}
+.box{
+    height: 693px;
+    background-color: rgb(204, 204, 204);
+    padding-top: 45px;
+}
+.box .putin{
+    width: 980px;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 9px 11px 21px 2px rgba(0, 0, 0, 0.5);
+}
+.box .putin p:nth-child(1){
+    height: 56px;
+    line-height: 56px;
+    background-color:#fff;
+    color: rgb(180, 160, 120);
+    font-size: 20px;
+    border-bottom: 1px solid  rgb(180, 160, 120);
+}
+.box .putin input:nth-child(2),.box .putin input:nth-child(4),.box .putin input:nth-child(6),.box .putin input:nth-child(8){
+    width: 396px;
+    height: 40px;
+    border: 1px solid rgb(180, 160, 120);
+    border-radius: 10px;
+    margin-top:38px;
+    text-indent: 1em;
+    font-size: 14px;
+}
+.box .putin p:nth-child(3),.box .putin p:nth-child(5),.putin p:nth-child(7),.putin p:nth-child(9){
+    height: 5px;
+    color: red;
+    font-size: 12px;
+    margin-left: -230px;
+    padding-top: 10px;
+}
+.box .putin p:nth-child(5){
+    margin-left: -275px;
+}
+.putin p:nth-child(10){
+    margin-left: -165px;
+    margin-top: 20px;
+}
+.putin p:nth-child(10) a{
+    color:royalblue;
+}
+.putin button:nth-child(11){
+    width: 400px;
+    height: 50px;
+    color: #fff;
+    border: 1px solid rgb(180, 160, 120);
+    border-radius: 10px;
+    font-size: 16px;
+    background-color:rgb(180, 160, 120);
+    margin-top: 20px;
+}
